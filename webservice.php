@@ -30,6 +30,7 @@
 		/* output in necessary format */
 		if($format == 'json') {
 			header('Content-type: application/json');
+			prepareResultJSON( $responses );
 			echo json_encode(array('response'=>$responses));
 		}
 		else {
@@ -98,55 +99,31 @@
 			$result = isIndividualOrClass( $key, false );
 			if( $result["verdict"] ) {			
 				if( $result["verdict"] == 1 ) { //if key is a named individual
-					//$ret = array();
 					$types = getTypeOfIndividual( $key );
 					foreach( $types as $type ) {
-						//echo '<br>As "' . $type . '": ';			
 						$retn = array();
 						$retn['type'] = $type;			
-						if( $type == "Area" || $type == "District" ) {
-							
+						if( $type == "Area" || $type == "District" ) {							
 							// find District and Tourist Spots if type is Area
-							//$strArea = '<div class="well"><span class="label label-success">';
-							if( $type == "Area" ) { // Area
-								
+							if( $type == "Area" ) { // Area								
 								$dist = getDistrict( $key );
 								$retn['partOf'] = $dist;
-								//$strArea = $strArea . 'An area in District '.$dist.' in Bangladesh.<br>';
 								$spots = getSpotsInArea( $key );
 							}
 							else { // District
-								//$strArea = $strArea . 'A District';
-								//$retn['type'] = "District";
 								$spots = getSpotsInDistrict( $key );
 							}
-							//$strArea = $strArea . '</span></div>';
-							//echo $strArea;
-
-							//$cnt = $spots['count'];
-							//if( $cnt < 2 ) { $aux = "is"; $entry = "spot"; }
-							//else { $aux = "are"; $entry = "spots"; }
-							//if( $cnt == 0 ) { $cnt = "no"; $end = "."; }
-							//else $end = "-";
-							//echo "<div class='alert alert-success' role='alert'>" . "There ".$aux." "."<span class='badge'>".$cnt."</span>"." tourist ".$entry." in ".$key.".</div>";
-							//print "<pre>";  print_r($spots);
 							$retn['spots'] = array();
 							if( $spots['count'] > 0 ) {
-								//echo "<ul class='list-group'>";
 								foreach($spots['result'] as $sp) {
-									//echo "<li class='list-group-item' onclick='triggerSearch(this)'>".$sp['spot'];
 									$spotTypes = getTypeOfIndividual( $sp['spot'] );
 									foreach ($spotTypes as $k => $value) {
-										//echo "!!".$value."!!";
 										if( $value != $type ) { $st = $value; break; }
 
 									}
-									//echo ' ('.$st.')</li>';
 									$retn['spots'] = array_merge( $retn['spots'], array( array( "spot" => $sp['spot'], "type" => $st ) ) );
 								}
-								//echo "</ul>";
 							}
-							//echo "<br><br>";
 						}
 						else { // Travel Attraction & Accomodation
 							//$spotTypes = getTypeOfIndividual( $key );
@@ -213,5 +190,20 @@
 				);
 			}		
 		}	
+	}
+
+	function prepareResultJSON( $data ) {
+		$verdict = array();
+		$verdict['message'] = $data['message'];
+		$verdict['key'] = $data['key'];
+		$verdict['results'] = array();
+		if( $data['result'] == "" ) {
+			$vedict['results'] = "";
+		}
+		else { 
+			foreach( $data['result'] as $key => $value ) {
+				
+			}
+		}
 	}
 ?>
