@@ -1,0 +1,33 @@
+<response>
+	<key>search_key</key>
+	<no_of_instances>no_of_instances</no_of_instances>
+	<instances>
+		<insatance type="Travel Attraction" has_instance="true/false">
+			<details>
+				<d1 type="type">Park</d1>
+				<d2 type="Location">Dhaka</d2>
+				<d3 type="Activity">Swiming</d3>
+				<d4 type="Open">All Day</d4>
+				<d5 type="Similar">Comilla</d5>
+			</details>
+		</insatance>
+		<insatance type="Location" has_instance="true/false">
+			<details>
+				<detail type="District">Dhaka</detail>
+				<detail type="Travel Attraction">
+					<s1 type="Resort">BRAC CDM</s1>
+					<s1 type="Bridge">Birulia Bridge</s1>
+					<s1 type="Monument">The National Martyr's Monument</s1>
+				</detail>
+			</details>
+		</insatance>
+		<insatance type="Accommodation" has_instance="true/false">
+			<details>
+				<d1 type="type">Hotel Diana   </d1>
+				<d2 type="area">Kandirpar   </d2>
+			</details>
+		</insatance>
+		<insatance type="Activity" has_instance="true/false">
+		</insatance>
+	</instances>
+</response>
