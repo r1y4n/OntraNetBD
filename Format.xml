@@ -1,0 +1,37 @@
+
+<resultset>
+	<key>Birulia Bridge</key>
+	<result type="Travel Attraction">
+		<details>
+			<d1 type="type"> Park  </d1>
+			<d2 type="Location"> Dhaka  </d2>
+			<d3 type="Activity"> Swiming  </d3>
+			<d4 type="Open"> All Day  </d4>
+			<d5 type="Similar"> Comilla  </d5>
+		</details>
+	</result>
+	
+	<result type="Area">
+		<details>
+			<d1 type="District">Dhaka</d1>
+			<d2 type="Travel Attraction"> 
+				<s1 type="Resort">BRAC CDM</s1>
+				<s1 type="Bridge">Birulia Bridge</s1>
+				<s1 type="Monument">The National Martyr's Monument</s1>
+			</d2>
+		</details>
+	</result>
+	
+	<result type="District">
+		<details>
+			<d1 type="Spot">District Comilla   </d1>
+		</details>
+	</result>
+	
+	<result type="Accommodation">
+		<details>
+			<d1 type="type">Hotel Diana   </d1>
+			<d2 type="area">Kandirpar   </d2>
+		</details>
+	</result>
+</resultset>
