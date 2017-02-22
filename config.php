@@ -7,7 +7,7 @@ $arc_config = array(
   /* MySQL database settings */
   'db_host' => 'localhost',
   'db_user' => 'root',
-  'db_pwd' => '',
+  'db_pwd' => 'root',
   'db_name' => 'ontranetbd',
 
   /* ARC2 store settings */
