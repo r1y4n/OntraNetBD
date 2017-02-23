@@ -4,30 +4,43 @@
 	<instances>
 		<insatance type="Travel Attraction" has_instance="true/false">
 			<details>
-				<d1 type="type">Park</d1>
-				<d2 type="Location">Dhaka</d2>
-				<d3 type="Activity">Swiming</d3>
-				<d4 type="Open">All Day</d4>
-				<d5 type="Similar">Comilla</d5>
+				<detail type="Type"></detail>
+				<detail type="Location"></detail>
+				<detail type="Activity"></detail>
+				<detail type="Open"></detail>
+				<detail type="Similar Spots">
+					<s1 type=""></s1>
+					<s1 type=""></s1>
+					<s1 type=""></s1>
+				</detail>
 			</details>
 		</insatance>
 		<insatance type="Location" has_instance="true/false">
 			<details>
-				<detail type="District">Dhaka</detail>
+				<detail type="Type"></detail>
+				<detail type="District"></detail>
 				<detail type="Travel Attraction">
-					<s1 type="Resort">BRAC CDM</s1>
-					<s1 type="Bridge">Birulia Bridge</s1>
-					<s1 type="Monument">The National Martyr's Monument</s1>
+					<s1 type=""></s1>
+					<s1 type=""></s1>
+					<s1 type=""></s1>
 				</detail>
 			</details>
 		</insatance>
 		<insatance type="Accommodation" has_instance="true/false">
 			<details>
-				<d1 type="type">Hotel Diana   </d1>
-				<d2 type="area">Kandirpar   </d2>
+				<detail type="Type"></detail>
+				<detail type="Location"></detail>
 			</details>
 		</insatance>
 		<insatance type="Activity" has_instance="true/false">
+			<details>
+				<detail type="Type"></detail>
+				<detail type="Available At">
+					<s1 type=""></s1>
+					<s1 type=""></s1>
+					<s1 type=""></s1>
+				</detail>
+			</details>
 		</insatance>
 	</instances>
 </response>

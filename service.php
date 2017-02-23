@@ -322,23 +322,23 @@ style.firebugResetStyles {
             <h1 class="cover-heading">New User</h1>
             <p class="lead">Register to enjoy the web service of OnTraNetBD</p>
             <p class="lead">
-              <a href="serviceregister.php" class="btn btn-lg btn-primary">Register</a>              
+              <a href="serviceregister.php" class="btn btn-lg btn-primary">Register</a>
             </p>
           </div>
           <hr> -->
           <div class="inner cover">
-            <h1 class="cover-heading">OnTraNetBD Web Service</h1>            
+            <h1 class="cover-heading">OnTraNetBD Web Service</h1>
             <p class="lead">Send request to the link with search key and format:</p>
             <p class="lead"><code>http://www.ontranetbd.org/webservice.php</code></p>
             <p class="lead">
-                Available response formats: 
+                Available response formats:
                 <span class='label label-success'>JSON</span>
                 <span class='label label-danger'>XML</span>
             </p>
             <p class="lead">Sample URL:</p>
             <p class="lead"><pre>http://www.ontranetbd.org/webservice.php?key=Jaflong&amp;format=json</pre></p>
-            <div class="text-center"><a href='http://nabid.github.io/OntraNetBD/'>Download OntraNetBD</a></div>
-          </div>          
+            <!-- <div class="text-center"><a href='http://nabid.github.io/OntraNetBD/'>Download OntraNetBD</a></div> -->
+          </div>
 
           <div class="mastfoot">
             <div class="inner">
@@ -360,7 +360,7 @@ style.firebugResetStyles {
     <script src="assets/bootstrap/js/bootstrap.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/ie10-viewport-bug-workaround.js"></script>
-  
+
 
 </body>
 </html>
